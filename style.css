@@ -23,7 +23,7 @@ body{
 .header{
     position: absolute;
     top: 0;
-    background: #000000;
+    background: #00000096;
     width: 100%;
     color: rgb(205, 205, 205);
     border-bottom: 2px solid rgb(197, 197, 197);
