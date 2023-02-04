@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: url(https://images.unsplash.com/photo-1606220838315-056192d5e927?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHZvaXR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background: #616161;
+    border-radius: 10px;
+}
+.header{
+    position: absolute;
+    top: 0;
+    background: #000000;
+    width: 100%;
+    color: rgb(205, 205, 205);
+    border-bottom: 2px solid rgb(197, 197, 197);
+    font-size: 20px;
+}
+.container{
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.322);
+    border-radius: 10px;
+    box-shadow: 0px  2px 5px rgba(171, 171, 171, 0.5);
+    max-width: 90%;
+    margin: 10px;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(254, 254, 254);
+}
+h2{
+    font-weight: 600;
+}
+input{
+    padding: 20px 10px;
+    font-size: 18px;
+    background: transparent;
+    border-color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+}
+.errorMessage{
+    color: red;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 10px;
+    display: none;
+}
+.btn{
+    background: black;
+    color: rgb(240, 240, 240);
+    text-transform: uppercase;
+    width: 250px;
+    height: 45px;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    border-color: aliceblue;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #212121;
+    color: white;
+    transition: background-color 300ms ease-in-out;
+}
+.gallery img{
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px;
+    object-fit: cover;
+    margin: 4rem;
+}
+.gallery{
+    display: none;
+}
+
+@media (max-width: 1635px){
+    .gallery img{
+        width: 60%;
+        height: auto;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 485px){
+    .container{
+        margin: 1rem;
+        margin-top: 10rem;
+    }
+    .gallery img{
+        width: 280px;
+    }
+}
